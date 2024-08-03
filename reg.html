@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        h1{
+            text-align:center;
+            color:green;
+        }
+        form{
+            width:500px;
+            background-color: lightgray;
+            border-radius: 10px;
+            box-shadow:0px 0px 15px 0px rgb(32, 28, 28);
+            padding : 10px;
+            margin:auto;
+            font-size: 16px;
+            font-weight: bold;
+
+
+        }
+        .txt{
+            display: block;
+            width:95%;
+            height: 30px;
+            padding: 5px;
+            margin:10px;
+            border:none;
+            border-radius:5px;
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .range{
+            display: block;
+            width:95%;
+            padding:5px;
+            margin: 10px;
+            height:5px;
+            border-radius:5px;
+            appearance: none;
+            
+        }
+       .range::-webkit-slider-thumb{
+        appearance: none;
+        width:15px;
+        height:15px;
+        background-color:green;
+        border-radius:50%;
+        cursor: pointer;
+       }
+       .btn{
+        width:20%;
+        background-color: green;
+        color:white;
+        border:none;
+        padding:8px;
+        margin: 10px;
+        border-radius:4px;
+       }
+       .btn:hover{
+        background-color: chartreuse;
+        color:black;
+       }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form >
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" class="txt" placeholder="Enter your name" required>
+        <label for="Password">Password:</label>
+        <input type="password" name="password" id="password" class="txt" placeholder="Enter your password" required>
+        <label for="Password">Confirm Password:</label>
+        <input type="password" name="confirm password" id="confirm password" class="txt" placeholder="Confirm password" required>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" name="contact" id="contact" class="txt" placeholder="Enter a number" required>
+        <input type="range" name="skill" id="skill" class="range">
+        <label for="email">email id:</label>
+        <input type="email" name="email" id="email" class="txt" placeholder="Enter your email:"required>
+        <label for="url">Profile URL:</label>
+        <input type="url" name="url" id="url" class="txt" placeholder="Enter a URL:">
+        <label for="file">Resume:</label>
+        <input type="file" name="file" id="file" class="file" >
+        <center>
+            <input type="submit" class="btn" value="Submit">
+            <input type="reset" class="btn" value="Reset">
+
+        </center>   
+
+
+    
+</body>
+</html>
